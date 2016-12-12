@@ -30,7 +30,7 @@ npm install
 
 npm start
 ```
-**Listen at [http://localhost:8888/]([http://localhost:8888/])**
+**Listen at** [http://localhost:8888/](http://localhost:8888/)
 ```
 npm run build
 ```
