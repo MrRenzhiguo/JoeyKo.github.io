@@ -17,7 +17,11 @@
 -  ant motion
 
 ## How To Get Started
+<<<<<<< HEAD
 **First, clone the repo**
+=======
+**Firstly**
+>>>>>>> origin/master
 ```
 git clone https://github.com/JoeyKo/JoeyKo.github.io
 ```
