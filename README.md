@@ -9,15 +9,15 @@
 ## Live Demo
 [https://JoeyKo.github.io/](https://JoeyKo.github.io/)
 
-## What I Use：
+## What Involves：
 -  webpack
 -  es6
--  scss
 -  react
--  antd
 -  react-router
+-  antd
+-  ant motion
 
-## How To Get Start
+## How To Get Started
 **Firstly**
 ```
 git clone https://github.com/JoeyKo/JoeyKo.github.io
