@@ -9,7 +9,7 @@
 ## Live Demo
 [https://JoeyKo.github.io/](https://JoeyKo.github.io/)
 
-## What To Use：
+## What I Use：
 -  webpack
 -  es6
 -  scss
@@ -17,6 +17,13 @@
 -  antd
 -  react-router
 
+## How To Get Start
+**Firstly**
+```
+git clone https://github.com/JoeyKo/JoeyKo.github.io
+```
+
+**Then**
 ```
 npm install
 
