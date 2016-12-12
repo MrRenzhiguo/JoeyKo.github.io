@@ -1,8 +1,7 @@
 # React App
 [![React](https://cldup.com/dTxpPi9lDf.thumb.png)](https://facebook.github.io/react/)
 
-## Ant App
-  -  [Link](https://joeyko.github.io/antd-app/)
+## To be exact, this named React-Ant-App
   -  base on [antd](https://ant.design/)
   -  with [react-router](https://github.com/ReactTraining/react-router)
 
