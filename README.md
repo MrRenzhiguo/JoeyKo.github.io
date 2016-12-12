@@ -9,14 +9,21 @@
 ## Live Demo
 [https://JoeyKo.github.io/](https://JoeyKo.github.io/)
 
-## What To Use：
+## What Involves：
 -  webpack
 -  es6
--  scss
 -  react
--  antd
 -  react-router
+-  antd
+-  ant motion
 
+## How To Get Started
+**Firstly**
+```
+git clone https://github.com/JoeyKo/JoeyKo.github.io
+```
+
+**Then**
 ```
 npm install
 
