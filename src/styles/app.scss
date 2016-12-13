@@ -1,7 +1,16 @@
-/*原生组件*/
 $btnColor: #c40000; /*按钮颜色*/
 $greyColor: #999;
 
+/*404组件*/
+.pageNotFound {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align:center;
+}
+
+/*原生组件*/
 .btn, input{
   outline: none;
 }

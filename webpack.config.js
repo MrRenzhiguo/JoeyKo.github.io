@@ -1,17 +1,15 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 module.exports = {
     devtool: 'eval-source-map',
 
     entry: {
-        main: './src/entry.js', //唯一入口文件
-        vendor: ['react']
+        main: './src/entry.js'
     },
     output: {
-        path: './build', //打包后的文件存放的地方
-        filename: 'bundle.js', //打包后输出文件的文件名
-        publicPath: 'http://localhost:8888/build/'  //启动本地服务后的根目录
+        path: './build', 
+        filename: 'bundle.js',
+        publicPath: 'http://localhost:8888/build/'
     },
 
     module: {
@@ -43,11 +41,7 @@ module.exports = {
     },
 
     plugins: [
-        new ExtractTextPlugin('main.css'),
-        new CommonsChunkPlugin({
-           name: 'vendor',
-           filename: 'vendor.js'
-        })
+        new ExtractTextPlugin('main.css')
     ]
 
 };

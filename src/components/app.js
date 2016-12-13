@@ -5,6 +5,8 @@ import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router';
 // 引入导航组件
 import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
+// 引入404组件
+import myPageNotFound from './pageNotFound.js';
 
 // 引入Antd子组件
 import myIntroduce from './introduce.js';
@@ -28,6 +30,7 @@ class Sider extends React.Component {
         this.state = {
             current: ''
         };
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick(e) {
@@ -64,6 +67,7 @@ class Sider extends React.Component {
                             <Menu.Item key="10"><Link to="/myBanner">轮播</Link></Menu.Item>
                             <Menu.Item key="11"><Link to="/myPicDetails">图片详情页</Link></Menu.Item>
                         </SubMenu>
+                        <Menu.Item key="12"><Link to="/myNothing"><Icon type="link" />不存在的链接</Link></Menu.Item>
                     </Menu>
                 </div>
                 <div className="header">
@@ -71,16 +75,16 @@ class Sider extends React.Component {
                           selectedKeys={[this.state.current]}
                           mode="horizontal"
                     >
+                        <Menu.Item key="alipay">
+                            <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+                        </Menu.Item>
                         <Menu.Item key="mail">
-                            <Icon type="mail" />Navigation One
+                            <Icon type="mail" />Navigation Three
                         </Menu.Item>
                         <Menu.Item key="app" disabled>
                             <Icon type="appstore" />Navigation Two
                         </Menu.Item>
-                        <Menu.Item key="alipay">
-                            <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
-                        </Menu.Item>
-                        <SubMenu title={<span><Icon type="setting" />Navigation Three - Submenu</span>}>
+                        <SubMenu title={<span><Icon type="setting" />Navigation One- Submenu</span>}>
                             <Menu.Item key="setting:1">Option 1</Menu.Item>
                             <Menu.Item key="setting:2">Option 2</Menu.Item>
                             <Menu.Item key="setting:3">Option 3</Menu.Item>
@@ -101,12 +105,12 @@ ReactDom.render((
     <Router history={hashHistory} >
         <Route path="/" component={Sider}>
             <IndexRoute component={myIntroduce} />
+            <Route path="myIntroduce" component={myIntroduce} />
             <Route path="pureComp/Clock" component={myClock} />
             <Route path="pureComp/LoginControl" component={myLoginControl} />
             <Route path="pureComp/DropDown" component={myDropDown} />
             <Route path="pureComp/TodoApp" component={myTodoApp} />
             <Route path="pureComp/RealTimeSearch" component={myRealTimeSearch} />
-            <Route path="myIntroduce" component={myIntroduce} />
             <Route path="myApproach" component={myApproach} />
             <Route path="myDetailSwitch" component={myDetailSwitch} />
             <Route path="myTableEnterLeave" component={myTableEnterLeave} />
@@ -114,5 +118,6 @@ ReactDom.render((
             <Route path="myBanner" component={myBanner} />
             <Route path="myPicDetails" component={myPicDetails} />
         </Route>
+        <Route path="*" component={myPageNotFound} />
     </Router>
 ), document.getElementById('app'));
