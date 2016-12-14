@@ -1,5 +1,5 @@
 # React App
-[![React](https://cldup.com/dTxpPi9lDf.thumb.png)](https://facebook.github.io/react/)
+[![React](http://www.runoob.com/wp-content/uploads/2016/02/react.png)](https://facebook.github.io/react/)
 
 ## To be exact, this named React-Ant-App
   -  base on [antd](https://ant.design/)
