@@ -18,21 +18,23 @@
 
 ## How To Get Started
 
-**First, clone the repo**
+**First of all, clone the repo**
 
 ```
 git clone https://github.com/JoeyKo/JoeyKo.github.io
 ```
 
-**Then**
+**Install**
 ```
 npm install
 ```
-**如果遇到node-sass安装失败的问题，使用镜像安装```cnpm install node-sass --save-dev```，具体解决方案见[这里](http://blog.csdn.net/gx15366039985/article/details/53535081)**
+**If everything is okay, just start it**
 ```
 npm start
 ```
-**Listen at** [http://localhost:8888/](http://localhost:8888/)
+**Then Link to** [http://localhost:8888/](http://localhost:8888/)
+
+**If everything just fine, ignore this. 如果遇到node-sass安装失败的问题，使用镜像安装```cnpm install node-sass --save-dev```**
 
 **Production Version**
 ```
