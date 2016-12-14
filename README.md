@@ -1,7 +1,7 @@
 # React App
 [![React](http://www.runoob.com/wp-content/uploads/2016/02/react.png)](https://facebook.github.io/react/)
 
-## To be exact, this named React-Ant-App
+## To be exact, this names React-Ant-App
   -  base on [antd](https://ant.design/)
   -  with [react-router](https://github.com/ReactTraining/react-router)
 
