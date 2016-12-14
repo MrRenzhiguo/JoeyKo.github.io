@@ -33,6 +33,8 @@ npm install
 npm start
 ```
 **Listen at** [http://localhost:8888/](http://localhost:8888/)
+
+**Production Version**
 ```
 npm run build
 ```
