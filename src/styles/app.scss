@@ -24,13 +24,12 @@ $greyColor: #999;
 }
 
 .clock {
-  float: left;
   width: 580px;
   height: 280px;
   box-shadow: 0 0 10px #ccc;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 20px;
+  margin: 20px auto;
+  text-align:center;
+  padding-top:20px;
 }
 
 .login {
@@ -72,6 +71,10 @@ $greyColor: #999;
     >li {
       height: 36px;
       line-height: 36px;
+      >a {
+        font-size:16px;
+        transition:none;
+      }
     }
     >li:hover {
       background-color: $btnColor;
@@ -95,7 +98,6 @@ $greyColor: #999;
   .btn-todo {
     width: 80px;
     height: 40px;
-    vertical-align: middle;
   }
   >ul {
     width: 440px;
@@ -129,14 +131,14 @@ $greyColor: #999;
         }
         &:checked + label:after {
           content: '';
-          height: 4px;
-          width: 9px;
+          height: 8px;
+          width: 14px;
           border: 3px solid #09ad7e;
           border-top-color: transparent;
           border-right-color: transparent;
           transform: rotate(-55deg);
           position: absolute;
-          top: 4px;
+          top: 5px;
           left: 10px;
         }
       }

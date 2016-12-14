@@ -5,14 +5,6 @@ import {Button, Table} from 'antd';
 import 'antd/dist/antd.css';
 
 export default class TableEnterLeave extends React.Component {
-    static propTypes = {
-        className: React.PropTypes.string,
-    };
-
-    static defaultProps = {
-        className: 'table-enter-leave-demo',
-    };
-
     constructor(props) {
         super(props);
         this.columns = [
@@ -132,7 +124,7 @@ export default class TableEnterLeave extends React.Component {
                 </div>
                 <Table
                     columns={this.columns}
-                    pagination={{pageSize: 4}}
+                    pagination={{pageSize: 16}}
                     dataSource={this.state.data}
                     className={`${this.props.className}-table`}
                     getBodyWrapper={this.getBodyWrapper}
@@ -142,3 +134,12 @@ export default class TableEnterLeave extends React.Component {
         );
     }
 }
+
+TableEnterLeave.propTypes = {
+        className: React.PropTypes.string,
+    };
+
+
+TableEnterLeave.defaultProps = {
+        className: 'table-enter-leave-demo',
+    };
