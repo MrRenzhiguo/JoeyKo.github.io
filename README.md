@@ -28,7 +28,7 @@ git clone https://github.com/JoeyKo/JoeyKo.github.io
 ```
 npm install
 ```
-**如果遇到node-sass安装失败的问题，解决方案见[这里](http://blog.csdn.net/gx15366039985/article/details/53535081)**
+**如果遇到node-sass安装失败的问题，使用镜像安装```cnpm install node-sass --save-dev```，具体解决方案见[这里](http://blog.csdn.net/gx15366039985/article/details/53535081)**
 ```
 npm start
 ```
