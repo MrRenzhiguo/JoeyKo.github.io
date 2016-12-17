@@ -23,6 +23,18 @@ import myDropDown from './pureComp/DropDown';
 import myTodoApp from './pureComp/TodoApp';
 import myRealTimeSearch from './pureComp/RealTimeSearch';
 
+//初始界面
+class begin extends React.Component {
+    render() {
+        return (
+            <div className="start">
+                <h1>Welcome, my friend!</h1>
+                <p>fork me on <a href="https://github.com/JoeyKo/JoeyKo.github.io">Github</a></p>
+            </div>
+        )
+    }
+}
+
 // 配置导航
 class Sider extends React.Component {
     constructor(props) {
@@ -104,7 +116,7 @@ class Sider extends React.Component {
 ReactDom.render((
     <Router history={hashHistory} >
         <Route path="/" component={Sider}>
-            <IndexRoute component={myIntroduce} />
+            <IndexRoute component={begin} />
             <Route path="myIntroduce" component={myIntroduce} />
             <Route path="pureComp/Clock" component={myClock} />
             <Route path="pureComp/LoginControl" component={myLoginControl} />

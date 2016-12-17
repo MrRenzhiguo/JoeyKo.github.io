@@ -10,6 +10,18 @@ $greyColor: #999;
   text-align:center;
 }
 
+/*IndexRoute*/
+.start {
+  text-align: center;
+  p{
+    margin-top: 10px;
+    font-size: 16px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
 /*原生组件*/
 .btn, input{
   outline: none;
