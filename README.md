@@ -5,7 +5,7 @@
   -  base on [antd](https://ant.design/)
   -  with [react-router](https://github.com/ReactTraining/react-router)
 
-## :point_right:Live Demo
+## Live Demo
 [https://JoeyKo.github.io/](https://JoeyKo.github.io/)
 
 ## What Involves：
